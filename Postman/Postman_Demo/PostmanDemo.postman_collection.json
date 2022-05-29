@@ -1,0 +1,377 @@
+{
+	"info": {
+		"_postman_id": "78fa8c28-86f8-49e1-98a4-f630ab06761a",
+		"name": "PostmanDemo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20933026"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "Get_Single_Issue",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "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",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "EvdokiyaValova",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"title\" : \"GitHubIssues from Postman\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://github.com/EvdokiyaValova/postman/issues/6",
+							"protocol": "https",
+							"host": [
+								"github",
+								"com"
+							],
+							"path": [
+								"EvdokiyaValova",
+								"postman",
+								"issues",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Github_All_Issues",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://github.com/EvdokiyaValova/postman/issues",
+							"protocol": "https",
+							"host": [
+								"github",
+								"com"
+							],
+							"path": [
+								"EvdokiyaValova",
+								"postman",
+								"issues"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post",
+			"item": [
+				{
+					"name": "Creating_New_Issue",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "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",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "EvdokiyaValova",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"title\" : \"GitHubIssues from Postman\"}"
+						},
+						"url": {
+							"raw": "https://api.github.com/repos/EvdokiyaValova/postman/issues",
+							"protocol": "https",
+							"host": [
+								"api",
+								"github",
+								"com"
+							],
+							"path": [
+								"repos",
+								"EvdokiyaValova",
+								"postman",
+								"issues"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Creating_Issue_With_Labels",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "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",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "EvdokiyaValova",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"title\" : \"GitHubIssues from Postman\"}"
+						},
+						"url": {
+							"raw": "https://api.github.com/repos/EvdokiyaValova/postman/issues",
+							"protocol": "https",
+							"host": [
+								"api",
+								"github",
+								"com"
+							],
+							"path": [
+								"repos",
+								"EvdokiyaValova",
+								"postman",
+								"issues"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Update",
+			"item": [
+				{
+					"name": "PUT_Single_Issue",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "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",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "EvdokiyaValova",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.github.com/repos/EvdokiyaValova/postman/issues/3/lock",
+							"protocol": "https",
+							"host": [
+								"api",
+								"github",
+								"com"
+							],
+							"path": [
+								"repos",
+								"EvdokiyaValova",
+								"postman",
+								"issues",
+								"3",
+								"lock"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT_Single_Issue Copy",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "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",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "EvdokiyaValova",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.github.com/repos/EvdokiyaValova/postman/issues/3/lock",
+							"protocol": "https",
+							"host": [
+								"api",
+								"github",
+								"com"
+							],
+							"path": [
+								"repos",
+								"EvdokiyaValova",
+								"postman",
+								"issues",
+								"3",
+								"lock"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Delete",
+			"item": [
+				{
+					"name": "Delete_Single_Issue",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "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",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "EvdokiyaValova",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"title\" : \"GitHubIssues from Postman\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://github.com/EvdokiyaValova/postman/issues/4",
+							"protocol": "https",
+							"host": [
+								"github",
+								"com"
+							],
+							"path": [
+								"EvdokiyaValova",
+								"postman",
+								"issues",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Unloc_Issue",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "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",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "EvdokiyaValova",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.github.com/repos/EvdokiyaValova/postman/issues/3/lock",
+							"protocol": "https",
+							"host": [
+								"api",
+								"github",
+								"com"
+							],
+							"path": [
+								"repos",
+								"EvdokiyaValova",
+								"postman",
+								"issues",
+								"3",
+								"lock"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
