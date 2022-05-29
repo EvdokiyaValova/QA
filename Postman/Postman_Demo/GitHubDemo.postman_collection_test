@@ -1,0 +1,425 @@
+{
+	"info": {
+		"_postman_id": "77319eb1-8ea3-458b-8636-8cc04f44579e",
+		"name": "GitHubDemo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20933026"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "GET_All_Issues",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Check body lenght\", function(){\r",
+									"    var body = pm.response.json();\r",
+									"    pm.expect(body.length).to.equal(3);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check body lenght\", function(){\r",
+									"    var body = pm.response.json();\r",
+									"    pm.expect(body.length, \"Body lenht property\").to.equal(2);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "EvdokiyaValova",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.github.com/repos/{{user}}/QA/issues",
+							"protocol": "https",
+							"host": [
+								"api",
+								"github",
+								"com"
+							],
+							"path": [
+								"repos",
+								"{{user}}",
+								"QA",
+								"issues"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET_Issue",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									" var body = pm.response.json(); \r",
+									"\r",
+									"pm.test(\"Check status code\", function(){\r",
+									"    pm.expect(pm.response.code).to.equal(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check status\", function(){\r",
+									"    pm.expect(pm.response.status).to.equal('OK');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check status code ES6\", () => {\r",
+									"    pm.expect(pm.response.code, \"STATUS CODE\").to.equal(201);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check status code other way\", function(){\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check issue Number\", function(){    \r",
+									"    pm.expect(body.number, \"Number property\").to.equal(1);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check issue URL\", function(){\r",
+									"    pm.expect(body.url, \"URL property\").to.equal(\"https://api.github.com/repos/EvdokiyaValova/QA/issues/1\");    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check issue ID\", function(){\r",
+									"    pm.expect(body.id, \"ID property\").to.equal(1251657800);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "EvdokiyaValova",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.github.com/repos/{{user}}/QA/issues/1",
+							"protocol": "https",
+							"host": [
+								"api",
+								"github",
+								"com"
+							],
+							"path": [
+								"repos",
+								"{{user}}",
+								"QA",
+								"issues",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "Creating_Issue",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var body = pm.response.json(); \r",
+									"\r",
+									"pm.test(\"Check status code\", function(){\r",
+									"    pm.expect(pm.response.code).to.equal(201);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check status\", function(){\r",
+									"    pm.expect(pm.response.status).to.equal('Created');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check status code ES6\", () => {\r",
+									"    pm.expect(pm.response.code, \"STATUS CODE\").to.equal(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check status code other way\", function(){\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check issue Number\", function(){    \r",
+									"    pm.expect(body.number, \"Number property\").to.equal(7);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check issue URL\", function(){\r",
+									"    pm.expect(body.url, \"URL property\").to.equal(\"https://api.github.com/repos/EvdokiyaValova/QA/issues/6\");    \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check issue ID\", function(){\r",
+									"    pm.expect(body.id, \"ID property\").to.equal(1251747031);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "EvdokiyaValova",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"title\" : \"GitHubIssues from Postman\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.github.com/repos/{{user}}/QA/issues",
+							"protocol": "https",
+							"host": [
+								"api",
+								"github",
+								"com"
+							],
+							"path": [
+								"repos",
+								"{{user}}",
+								"QA",
+								"issues"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Creating_Issue_other",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "EvdokiyaValova",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"title\" : \"GitHubIssues from Postman\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.github.com/repos/{{user}}/postman/issues",
+							"protocol": "https",
+							"host": [
+								"api",
+								"github",
+								"com"
+							],
+							"path": [
+								"repos",
+								"{{user}}",
+								"postman",
+								"issues"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "UPDATE",
+			"item": [
+				{
+					"name": "Update_Issue_1",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "EvdokiyaValova",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.github.com/repos/{{user}}/postman/issues/1",
+							"protocol": "https",
+							"host": [
+								"api",
+								"github",
+								"com"
+							],
+							"path": [
+								"repos",
+								"{{user}}",
+								"postman",
+								"issues",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update_Issue_2",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "EvdokiyaValova",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.github.com/repos/{{user}}/postman/issues/2",
+							"protocol": "https",
+							"host": [
+								"api",
+								"github",
+								"com"
+							],
+							"path": [
+								"repos",
+								"{{user}}",
+								"postman",
+								"issues",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "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",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "EvdokiyaValova",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
