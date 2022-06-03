@@ -60,7 +60,23 @@ namespace NunitWebDriverTests
             driver.FindElement(By.CssSelector(".softuni-btn")).Click();
             driver.FindElement(By.CssSelector("li")).Click();
             Assert.That(driver.FindElement(By.CssSelector("li")).Text, Is.EqualTo("Невалидно потребителско име или парола"));
+            
+        }
+
+        [Test]
+        public void Test_Search()
+        {
+            driver.Navigate().GoToUrl("https://softuni.bg/");
+            driver.Manage().Window.Size = new System.Drawing.Size(1552, 840);
+            driver.FindElement(By.CssSelector(".cell > .fa")).Click();
+            driver.FindElement(By.CssSelector(".container > form #search-input")).Click();
+            driver.FindElement(By.CssSelector(".container > form #search-input")).SendKeys("qa");
+            driver.FindElement(By.CssSelector(".container > form #search-input")).SendKeys(Keys.Enter);
+            driver.FindElement(By.CssSelector(".main-container")).Click();
+
+            Assert.That(driver.FindElement(By.CssSelector(".search-title")).Text, Is.EqualTo("Резултати от търсене на “qa”"));
             driver.Close();
+
         }
     }
 }
