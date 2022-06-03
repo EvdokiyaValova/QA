@@ -1,0 +1,176 @@
+{
+  "id": "1e803283-4347-47ea-8fea-d4ca3ca6bfba",
+  "version": "2.0",
+  "name": "SoftUni",
+  "url": "https://softuni.bg",
+  "tests": [{
+    "id": "e39ca9d8-8a9b-41ce-b138-36823c52a474",
+    "name": "Test_Login_InvalidUserAndPassword",
+    "commands": [{
+      "id": "737b9bc9-6f70-462b-841f-a253725e76c5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3aa90820-10f4-4ca5-88f9-2166fa0e7cae",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20e0a94b-4cae-4c2b-af39-99902ccaa517",
+      "comment": "",
+      "command": "click",
+      "target": "css=.softuni-btn-primary",
+      "targets": [
+        ["css=.softuni-btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//nav[@id='header-nav']/div[2]/ul/li[2]/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7356d7e2-476d-45a4-ba67-1531bcc4a70b",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "evdokiyavalova"
+    }, {
+      "id": "58937b9f-6eb4-4778-b319-04bb974310b8",
+      "comment": "",
+      "command": "type",
+      "target": "id=password-input",
+      "targets": [
+        ["id=password-input", "id"],
+        ["name=password", "name"],
+        ["css=#password-input", "css:finder"],
+        ["xpath=//input[@id='password-input']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Jaba1972"
+    }, {
+      "id": "78de6585-bf2e-41b3-b523-abf65e56777c",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a407c7dc-d540-471e-8ab7-0f88b0c744b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.authentication-page-form",
+      "targets": [
+        ["css=.authentication-page-form", "css:finder"],
+        ["xpath=//section/section", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b83e502-26e1-4759-a8a3-0aa59cc3e2f0",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "user1"
+    }, {
+      "id": "762f085b-231e-4baf-b1a8-b35447558ac2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.authentication-page-form",
+      "targets": [
+        ["css=.authentication-page-form", "css:finder"],
+        ["xpath=//section/section", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf65a18d-82c4-4383-becb-10000448d615",
+      "comment": "",
+      "command": "type",
+      "target": "id=password-input",
+      "targets": [
+        ["id=password-input", "id"],
+        ["name=password", "name"],
+        ["css=#password-input", "css:finder"],
+        ["xpath=//input[@id='password-input']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "user1"
+    }, {
+      "id": "087addec-882f-4508-9285-de4bb8ecc636",
+      "comment": "",
+      "command": "click",
+      "target": "css=.checkbox-icon",
+      "targets": [
+        ["css=.checkbox-icon", "css:finder"],
+        ["xpath=//label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f4ae11b-b7a2-4661-b521-10b075f03efe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.softuni-btn",
+      "targets": [
+        ["css=.softuni-btn", "css:finder"],
+        ["xpath=//input[@value='Вход']", "xpath:attributes"],
+        ["xpath=//article[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c06ed739-50b2-41b2-8db6-21daa15c3614",
+      "comment": "",
+      "command": "click",
+      "target": "css=li",
+      "targets": [
+        ["css=li", "css:finder"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'Невалидно потребителско име или парола')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "79bda5f5-aabd-4a26-8295-7dcd8ce79493",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li",
+      "targets": [
+        ["css=li", "css:finder"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'Невалидно потребителско име или парола')]", "xpath:innerText"]
+      ],
+      "value": "Невалидно потребителско име или парола"
+    }]
+  }],
+  "suites": [{
+    "id": "6442b8a8-2e81-4538-b16c-70547a287125",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e39ca9d8-8a9b-41ce-b138-36823c52a474"]
+  }],
+  "urls": ["https://softuni.bg/"],
+  "plugins": []
+}

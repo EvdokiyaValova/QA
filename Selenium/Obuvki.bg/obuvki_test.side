@@ -1,0 +1,202 @@
+{
+  "id": "8892a518-3296-4ff0-a9e4-83b9095bfead",
+  "version": "2.0",
+  "name": "obuvki_test",
+  "url": "https://www.obuvki.bg",
+  "tests": [{
+    "id": "515a4a15-22b6-4308-9bd3-494f56aac52e",
+    "name": "login_inwalid_email",
+    "commands": [{
+      "id": "3e0aae4f-4e05-475a-968d-598bece61b96",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92a24dc1-5f81-4ff8-8ac1-4013ac58ba9e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1302x698",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "25d5f975-09ab-45f9-a23a-46cb5308bbc1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Вход",
+      "targets": [
+        ["linkText=Вход", "linkText"],
+        ["css=.header-top-bar__item:nth-child(11)", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//html[@id='top']/body/header/div[3]/div/div/div[2]/div/a[6]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.obuvki.bg/customer/account/login/')])[2]", "xpath:href"],
+        ["xpath=//a[6]", "xpath:position"],
+        ["xpath=//a[contains(.,'Вход')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "768e7115-d539-4eb0-9d75-b8853162959b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.e-header-cart-button__icon path",
+      "targets": [
+        ["css=.e-header-cart-button__icon path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "f55a6745-9fe4-49e8-ad8b-87ca605e7bfa",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.e-header-cart-button__icon path",
+      "targets": [
+        ["css=.e-header-cart-button__icon path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "39d0d2c5-aa37-4b39-b160-a4c25dae3d5b",
+      "comment": "",
+      "command": "click",
+      "target": "id=login[username]",
+      "targets": [
+        ["id=login[username]", "id"],
+        ["name=login[username]", "name"],
+        ["css=#login\\[username\\]", "css:finder"],
+        ["xpath=//input[@id='login[username]']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "97b1d546-2ecd-48c3-b695-779eaa7eb830",
+      "comment": "",
+      "command": "type",
+      "target": "id=login[username]",
+      "targets": [
+        ["id=login[username]", "id"],
+        ["name=login[username]", "name"],
+        ["css=#login\\[username\\]", "css:finder"],
+        ["xpath=//input[@id='login[username]']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "alabala@mn.kl"
+    }, {
+      "id": "efcaa6d8-bfec-4f2c-9f45-1d3c70d46ec7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.input-wrapper--type-password > .input-wrapper__label",
+      "targets": [
+        ["css=.input-wrapper--type-password > .input-wrapper__label", "css:finder"],
+        ["xpath=//form[@id='login-form']/div/div[2]/label", "xpath:idRelative"],
+        ["xpath=//div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Парола')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "86b6dc3c-af7c-42cb-bfbf-03b09a541a04",
+      "comment": "",
+      "command": "type",
+      "target": "id=login[password]",
+      "targets": [
+        ["id=login[password]", "id"],
+        ["name=login[password]", "name"],
+        ["css=#login\\[password\\]", "css:finder"],
+        ["xpath=//input[@id='login[password]']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "alabala"
+    }, {
+      "id": "03fb9680-3a28-49ff-a018-70bb39131b71",
+      "comment": "",
+      "command": "click",
+      "target": "name=send",
+      "targets": [
+        ["name=send", "name"],
+        ["css=.e-button--color-brand:nth-child(4)", "css:finder"],
+        ["xpath=//button[@name='send']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3011b45-1225-4535-ae5d-2c6c9310b2ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.global-notices__item > span",
+      "targets": [
+        ["css=.global-notices__item > span", "css:finder"],
+        ["xpath=//html[@id='top']/body/div/ul/li/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Грешно потребителско име или парола.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "074d2c9b-ca09-4149-afd9-37529630ae24",
+      "comment": "",
+      "command": "click",
+      "target": "css=.global-notices__item > span",
+      "targets": [
+        ["css=.global-notices__item > span", "css:finder"],
+        ["xpath=//html[@id='top']/body/div/ul/li/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Грешно потребителско име или парола.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4bcdb82-9a55-4304-897c-79f67767d67e",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.global-notices__item > span",
+      "targets": [
+        ["css=.global-notices__item > span", "css:finder"],
+        ["xpath=//html[@id='top']/body/div/ul/li/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Грешно потребителско име или парола.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6861d123-4390-4a84-b0e4-c7374b29c833",
+      "comment": "",
+      "command": "click",
+      "target": "css=.global-notices__item > span",
+      "targets": [
+        ["css=.global-notices__item > span", "css:finder"],
+        ["xpath=//html[@id='top']/body/div/ul/li/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Грешно потребителско име или парола.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "41f46f35-801b-4d5c-9502-7b0b13919dfa",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.global-notices__item > span",
+      "targets": [
+        ["css=.global-notices__item > span", "css:finder"],
+        ["xpath=//html[@id='top']/body/div/ul/li/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Грешно потребителско име или парола.')]", "xpath:innerText"]
+      ],
+      "value": "Грешно потребителско име или парола."
+    }, {
+      "id": "006bd873-ee0b-4faa-9389-8a02c136b19c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8e516e95-1c80-41b3-946c-3795380aafc4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["515a4a15-22b6-4308-9bd3-494f56aac52e"]
+  }],
+  "urls": ["https://www.obuvki.bg/"],
+  "plugins": []
+}
