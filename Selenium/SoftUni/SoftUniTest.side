@@ -1,0 +1,147 @@
+{
+  "id": "26ef318d-d9d8-4605-9d7e-8aa57df96f67",
+  "version": "2.0",
+  "name": "SoftUniTest",
+  "url": "https://softuni.bg",
+  "tests": [{
+    "id": "e2ecc067-aad0-49e3-81f6-fad2b2136c36",
+    "name": "Test_Invalid_UsernameAndPassword",
+    "commands": [{
+      "id": "cf08ad8f-2d04-4675-91db-9f81837ff859",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b464201-1072-494b-8696-7e1faaf3adef",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9205d0d8-39e8-4861-91e3-d1f55c10c33d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.softuni-btn-primary",
+      "targets": [
+        ["css=.softuni-btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//nav[@id='header-nav']/div[2]/ul/li[2]/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce7f7e45-6921-449f-b5df-5e94e18efbd7",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07fc9265-a89b-4c48-b062-3ebcf634f754",
+      "comment": "",
+      "command": "click",
+      "target": "css=.authentication-page-form",
+      "targets": [
+        ["css=.authentication-page-form", "css:finder"],
+        ["xpath=//section/section", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cea45e42-c448-42b0-a99d-e13452bdf090",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "user1"
+    }, {
+      "id": "d560f4a2-9762-4ec8-948a-fe7d2cb62033",
+      "comment": "",
+      "command": "click",
+      "target": "css=.authentication-page-form",
+      "targets": [
+        ["css=.authentication-page-form", "css:finder"],
+        ["xpath=//section/section", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "382f3cf3-c6b3-4b66-81c2-487c0d717fdc",
+      "comment": "",
+      "command": "type",
+      "target": "id=password-input",
+      "targets": [
+        ["id=password-input", "id"],
+        ["name=password", "name"],
+        ["css=#password-input", "css:finder"],
+        ["xpath=//input[@id='password-input']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "user1"
+    }, {
+      "id": "f3858b5c-d712-4498-8e29-051c5e7e3f2f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.softuni-btn",
+      "targets": [
+        ["css=.softuni-btn", "css:finder"],
+        ["xpath=//input[@value='Вход']", "xpath:attributes"],
+        ["xpath=//article[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f417ec9-6e3f-4884-be69-da0a56262400",
+      "comment": "",
+      "command": "click",
+      "target": "css=li",
+      "targets": [
+        ["css=li", "css:finder"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'Невалидно потребителско име или парола')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4b01edc-fe5a-4e7e-b0b4-5494dae1334b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li",
+      "targets": [
+        ["css=li", "css:finder"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'Невалидно потребителско име или парола')]", "xpath:innerText"]
+      ],
+      "value": "Невалидно потребителско име или парола"
+    }, {
+      "id": "499407f3-2b60-447e-9ccd-cf887310d54e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ac944926-7f3e-4335-bfec-9ac458b6ec2b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e2ecc067-aad0-49e3-81f6-fad2b2136c36"]
+  }],
+  "urls": ["https://softuni.bg/"],
+  "plugins": []
+}
