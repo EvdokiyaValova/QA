@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSearchInWikipedia", "TestSearchInWikipedia\TestSearchInWikipedia.csproj", "{DE5D4EAE-DF2C-42F9-B51E-0F4D1D76356D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE5D4EAE-DF2C-42F9-B51E-0F4D1D76356D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE5D4EAE-DF2C-42F9-B51E-0F4D1D76356D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE5D4EAE-DF2C-42F9-B51E-0F4D1D76356D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE5D4EAE-DF2C-42F9-B51E-0F4D1D76356D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C11738C1-E048-492A-8E1E-A35A5FDCF598}
+	EndGlobalSection
+EndGlobal
