@@ -1,0 +1,165 @@
+{
+  "id": "8957bc61-9d9c-45fe-a15b-8f2be7e412bd",
+  "version": "2.0",
+  "name": "OpenWikipediaAndSearch",
+  "url": "https://www.wikipedia.org",
+  "tests": [{
+    "id": "672e03ec-f4fb-45a4-9381-223da94dc0be",
+    "name": "Untitled",
+    "commands": [{
+      "id": "39511ee4-60f2-4a2a-a305-aecf7dfacc78",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd645440-7382-44f0-9db5-3cab3f8f6654",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x774",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43f3a5b0-2cd3-4b02-a22a-0f3995a99481",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfcaf798-efd6-4d51-9e5f-904e8c12d00e",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Quality assurance"
+    }, {
+      "id": "5afe8eb5-200e-4110-954d-b77e519707e4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.svg-search-icon",
+      "targets": [
+        ["css=.svg-search-icon", "css:finder"],
+        ["xpath=//form[@id='search-form']/fieldset/button/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"],
+        ["xpath=//i[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3ebedbe-1e66-4616-a0d1-b7135525c237",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstHeading",
+      "targets": [
+        ["id=firstHeading", "id"],
+        ["css=#firstHeading", "css:finder"],
+        ["xpath=//h1[@id='firstHeading']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Quality assurance')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7ad12eb-269e-45cf-8d0d-9b12149dc2b5",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=firstHeading",
+      "targets": [
+        ["id=firstHeading", "id"],
+        ["css=#firstHeading", "css:finder"],
+        ["xpath=//h1[@id='firstHeading']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Quality assurance')]", "xpath:innerText"]
+      ],
+      "value": "Quality assurance"
+    }, {
+      "id": "c2016a47-2ada-496e-b69c-d1b4f3b4a0d0",
+      "comment": "",
+      "command": "click",
+      "target": "css=ul:nth-child(56) > li:nth-child(1)",
+      "targets": [
+        ["css=ul:nth-child(56) > li:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='mw-content-text']/div/ul/li", "xpath:idRelative"],
+        ["xpath=//div[5]/div/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Best practice')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2acc678-7832-4216-91f6-54e67d3cf860",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Best practice",
+      "targets": [
+        ["linkText=Best practice", "linkText"],
+        ["css=ul:nth-child(56) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Best practice')]", "xpath:link"],
+        ["xpath=//div[@id='mw-content-text']/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/wiki/Best_practice')]", "xpath:href"],
+        ["xpath=//div[5]/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Best practice')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "912cad55-45e8-43d7-b9a3-eb58c9ee1013",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstHeading",
+      "targets": [
+        ["id=firstHeading", "id"],
+        ["css=#firstHeading", "css:finder"],
+        ["xpath=//h1[@id='firstHeading']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Best practice')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "678f94a4-36c3-4349-b7f2-ed8dd6982314",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=firstHeading",
+      "targets": [
+        ["id=firstHeading", "id"],
+        ["css=#firstHeading", "css:finder"],
+        ["xpath=//h1[@id='firstHeading']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Best practice')]", "xpath:innerText"]
+      ],
+      "value": "Best practice"
+    }, {
+      "id": "abe59c43-a64d-40ce-bda7-0bed56b93d98",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1936f3d5-35ae-4fd7-8d48-045dddcc99c6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["672e03ec-f4fb-45a4-9381-223da94dc0be"]
+  }],
+  "urls": ["https://www.wikipedia.org/"],
+  "plugins": []
+}
