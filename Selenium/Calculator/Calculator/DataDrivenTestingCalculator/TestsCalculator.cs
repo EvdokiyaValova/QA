@@ -129,9 +129,7 @@ namespace DataDrivenTestingCalculator
             var operation = driver.FindElement(By.Id("operation"));
             var calculateButton = driver.FindElement(By.Id("calcButton"));
             var clearField = driver.FindElement(By.Id("resetButton"));
-            var resultField = driver.FindElement(By.Id("result"));
-
-            var page = field1.Text + field2.Text + operation.Text + resultField.Text;
+            var resultField = driver.FindElement(By.Id("result"));            
 
             //Act
             field1.SendKeys("7");
@@ -139,12 +137,14 @@ namespace DataDrivenTestingCalculator
             field2.SendKeys("2");
             calculateButton.Click();
 
+
             //Assert
-            Assert.IsFalse(page == string.Empty);
+            Assert.AreEqual("Result: 9", resultField.Text);
+
 
             clearField.Click();
 
-            Assert.IsTrue(page != string.Empty);
+            Assert.AreEqual("", resultField.Text);
         }
     }
 }
